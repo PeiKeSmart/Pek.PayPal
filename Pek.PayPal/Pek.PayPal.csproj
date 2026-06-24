@@ -26,6 +26,8 @@
   <PropertyGroup>
     <IsPackable>true</IsPackable>
     <PackageId>$(AssemblyName)</PackageId>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
     <Authors>$(Company)</Authors>
     <PackageProjectUrl>https://www.haocoding.com/</PackageProjectUrl>
     <PackageIcon>DH.png</PackageIcon>
@@ -48,6 +50,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="PayPalServerSDK" Version="2.3.0" />
   </ItemGroup>
 
   <ItemGroup>
